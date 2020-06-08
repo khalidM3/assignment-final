@@ -7,7 +7,4 @@ function showHideToggle() {
   }
 }
 
-showHideToggle();
 
-
-$('#form').validate();

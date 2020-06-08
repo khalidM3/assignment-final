@@ -6,44 +6,54 @@
   <title>Document</title>
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
-  <script src="js/jquery.validate.js"></script>
+  <!-- <script src="js/jquery.validate.js"></script> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <!-- <link rel="stylesheet" href="https://jqueryvalidation.org/files/demo/site-demos.css"> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.js"></script>
 </head>
 <body>
+  
   <section>
     <div class="header">
       <h1> EXOTIC DESIGNS</h1>
     </div>
    
     <div class="topnav">
-      <a href="/" class="active"> <h3>CONTACT US</h3></a>
+      <a href="./contact.html" class="active"> <h3>CONTACT US</h3></a>
       <div id="myLinks">
-        <a href="/">HOME</a>
-        <a href="/service.html"> SERVICE </a>
-     
-        <a href="/about.html"> ABOUT </a>
-      
-        
+        <a href="./index.html">HOME</a>
+        <a href="./service.html"> SERVICE </a>
+        <a href="./about.html"> ABOUT </a>
       </div>
       <a href="javascript:void(0);" class="icon" onclick="showHideToggle()">
         <i class="fa fa-bars"></i>
       </a>
     </div>
 
-    <form id='form'  method="GET" action="sucess.html">
-      <label> First Name </label><br>
-      <input id="fname" type="text" required></input><br>
-      <label> Last Name </label><br>
-      <input id="lname" type="text" required ></input><br>
-      <label> Email Address</label><br>
-      <input id="email" type="email" required ></input><br>
-      <label> Comment</label><br>
-      <textarea id="Comment" type="Comment" required ></textarea><br>
+    <form id='form' method="get" action="success.html">
+       <!-- <label> First Name </label><br> -->
+      <input id="fname" name="first-name" type="text" required placeholder="First Name"></input><br>
+      <!-- <label> Last Name </label><br> -->
+      <input id="lname" name="last-name" type="text" required placeholder="Last name"></input><br>
+      <!-- <label> Email Address</label><br> -->
+      <input id="email" name="email" type="email" required placeholder="email"></input><br>
+      <!-- <label> Comment</label><br> -->
+      <textarea id="Comment" name="comment" type="Comment"  placeholder="Comment"></textarea><br>
+      <input type="checkbox" name="checkbox-1" id="checkbox-1" required>
+      <label for="checkbox-1">I am not a robot </label> 
+      <br>
       <input type="submit">  </input> 
     </form>
+
   </section>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="app.js"></script>
+
+   <script ype="text/javascript" src="./app.js"></script>
+
+   <script ype="text/javascript" src="./contact.js"></script>
 </body>
 </html>
